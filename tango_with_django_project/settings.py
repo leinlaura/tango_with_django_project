@@ -108,7 +108,8 @@ AUTH_PASSWORD_VALIDATORS = [
 PASSWORD_HASHERS = (
 'django.contrib.auth.hashers.PBKDF2PasswordHasher',
 'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
-)
+)
+
                     
 
 
@@ -135,3 +136,6 @@ MEDIA_URL = '/media/'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [STATIC_DIR, ]
+
+#Login redirect
+LOGIN_URL = 'rango:login'
